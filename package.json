@@ -1,6 +1,6 @@
 {
-    "name": "sprysky.com",
-    "description": "The sprysky.com website featuring Ric Sprynczynatyk",
+    "name": "sprysky",
+    "description": "The sprysky website featuring Ric Sprynczynatyk",
     "author": "Steven Klein <steven.p.klein@gmail.com>",
     "version": "0.0.1",
     "private": true,
