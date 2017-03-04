@@ -11,6 +11,11 @@ gulp.task('templates', function () {
 
     var src = handlbarsConfig.src;
 
+    var data = function(){
+        delete require.cache[require.resolve('./resources/data')]
+        return require('./resources/data');
+    }();
+
     //skip some templates on production builds
     if(!!util.env.production){
         handlbarsConfig.ignoreProduction.forEach(function(element){
@@ -21,7 +26,7 @@ gulp.task('templates', function () {
     return gulp.src(src)
         .pipe(plumber())
         .pipe(handlebars(
-            require('./resources/data'),
+            data,
             handlbarsConfig
         ))
         .pipe(rename(function (path) {

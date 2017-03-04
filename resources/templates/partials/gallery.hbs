@@ -1,0 +1,21 @@
+{{#if gallery.images}}
+<div id="gallery" class="home-gallery">
+    <ul>
+        {{#each gallery.images}}
+            <li class="gallery-item gallery-item--{{@index}}">
+                <a data-col="{{@index}}" data-id="img-{{@index}}" href="{{../gallery.src}}{{this.file}}">
+                    <img src="{{../gallery.src}}{{this.file}}" alt="{{this.name}}" />
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+    <div id="gallery-full" class="gallery-full">
+        <div class="close-img">
+            <i class="fa fa-minus"></i>
+        </div>
+        <div class="spinner">
+            <i class="fa fa-spinner fa-spin"></i>
+        </div>
+    </div>
+</div>
+{{/if}}

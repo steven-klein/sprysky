@@ -1,4 +1,9 @@
 /**
  * app.css
  */
+@import 'normalize-css';
+@import 'milligram-cssnext';
+@import 'font-awesome';
+
 @import './_vars.css';
+@import './_gallery.css';

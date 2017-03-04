@@ -1,0 +1,144 @@
+/*--------------------------------------------------
+-- Gallery
+----------------------------------------------------*/
+#gallery.home-gallery{
+	background: #202020;
+	line-height: 0;
+	position: relative;
+	z-index: 0;
+	margin-bottom: 40px;
+	transition: padding 250ms linear;
+	-webkit-transition: padding 250ms linear;
+}
+
+#gallery.home-gallery .content-block-title{
+	display: none;
+}
+
+#gallery.home-gallery .gallery-item{
+	margin: 0;
+	width: 16.66666666666667%;
+	line-height: 0;
+	float: left;
+	overflow: hidden;
+	opacity: 1;
+	transition: opacity 250ms linear;
+	-webkit-transition: opacity 250ms linear;
+}
+
+#gallery.home-gallery.active .gallery-item{
+	opacity: 0.25;
+}
+
+#gallery.home-gallery .gallery-item a{
+	width: 100%;
+	overflow: hidden;
+}
+
+#gallery.home-gallery .gallery-item .gallery-caption{
+	display: none;
+}
+
+#gallery.home-gallery img{
+	border: none;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+.gallery-full {
+	background: none repeat scroll 0 0 #fff;
+	background: rgba(255, 255, 255, 0.75);
+	left: -50%;
+	padding-top: 50%;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	transition: left 250ms linear;
+	-webkit-transition: left 250ms linear;
+}
+
+.gallery-full.col-1,
+.gallery-full.col-5 {
+	left: 16.6666667%;
+}
+
+.gallery-full.col-2,
+.gallery-full.col-6 {
+	left: 33.3333333%;
+}
+
+.gallery-full.col-3{
+	left: 50%;
+}
+
+.gallery-full.col-4{
+	left: 0%;
+}
+
+
+#gallery-full img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	transition: opacity 250ms linear;
+	-webkit-transition: opacity 250ms linear;
+}
+
+#gallery-full img.show{
+	opacity: 1;
+}
+
+.close-img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 1;
+	z-index: 10;
+	cursor: pointer;
+	background: #fff;
+	padding: 7px 8px 3px;
+	font-size: 20px;
+	opacity: 0.5;
+	transition: opacity 250ms linear;
+	-webkit-transition: opacity 250ms linear;
+}
+
+.close-img:hover{
+	opacity: 1;
+}
+
+.spinner {
+	font-size: 40px;
+	left: 50%;
+	line-height: 1;
+	margin-left: -20px;
+	margin-top: -20px;
+	position: absolute;
+	top: 50%;
+}
+
+/*--------------------------------------------------
+	-- Gallery
+	----------------------------------------------------*/
+@media screen and (max-width: 599px){
+    #gallery.home-gallery.active{
+		padding-top: 100%;
+	}
+
+	.gallery-full{
+		top: 0;
+		padding-top: 100%;
+		width: 100%;
+		left: -100%;
+		transition: left 250ms linear 250ms;
+		-webkit-transition: left 250ms linear 250ms;
+	}
+
+	#gallery-full[class *= 'col-']{
+		left: 0;
+	}
+}

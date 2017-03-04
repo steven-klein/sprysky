@@ -1,3 +1,4 @@
 /**
  * app.css
  */
+import './gallery'
