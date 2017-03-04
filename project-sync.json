@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "prod": {
+      "host": "ADD_YOUR_PROD_USER@HOST_HERE",
+      "path": "ADD_YOUR_FULL_FILE_PATH_HERE",
+      "exclude": [],
+      "delete": false
+    },
+    "dev": {
+      "host": "ADD_YOUR_DEV_USER@HOST_HERE",
+      "path": "ADD_YOUR_FULL_FILE_PATH_HERE",
+      "exclude": [],
+      "delete": false
+    }
+  },
+  "excludeGlobal": [
+    "project-sync.json",
+    ".git",
+    ".DS_Store",
+    "node_modules"
+  ]
+}

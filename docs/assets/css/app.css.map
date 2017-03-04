@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../resources/assets/css/app.css","../../../resources/assets/css/_vars.css"],"names":[],"mappings":"AAAA;;GAEG;ACFH;;GAEG","file":"app.css","sourcesContent":["/**\n * app.css\n */\n@import './_vars.css';\n","/**\n * _vars.css\n */\n"]}
