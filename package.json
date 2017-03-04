@@ -9,7 +9,6 @@
         "clean": "del-cli docs",
         "copy": "npm-run-all --parallel copy:**",
         "copy:img": "copy 'resources/assets/img/**/*.+(jpg|jpeg|gif|png|svg)' docs/assets/img",
-        "copy:htaccess": "cp 'resources/.htaccess' docs/",
         "css": "postcss -c postcss.config.js",
         "deploy:prod": "cross-env NODE_ENV=production npm run build && project-sync prod up",
         "deploy:dev": "cross-env NODE_ENV=production npm run build && project-sync dev up",
