@@ -2,15 +2,15 @@ var fs = require("fs"),
     path = require("path"),
     url = require("url");
 
-var dir = path.resolve(__dirname + "/httpdocs");
+var dir = path.resolve(__dirname + "/docs");
 
 module.exports = {
     "notify": true,
     server: {
-        baseDir: "./httpdocs"
+        baseDir: "./docs"
     },
     "files": [
-        "httpdocs/**/*.+(html|css|js)"
+        "docs/**/*.+(html|css|js)"
     ],
     middleware: [ //emulate the default rules in .htaccess where example.com/page = example.com/page.html
         function (req, res, next) {
