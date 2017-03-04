@@ -1,6 +1,3 @@
-#symlink for dev environment
-httpdocs
-
 # local environment
 .env
 
